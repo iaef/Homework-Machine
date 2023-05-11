@@ -169,8 +169,7 @@ def ProcessLine(P, InputLine):
             ProcessWord(P, Word)
 
 
-with open("input.txt", encoding='utf-8') as input, open("SM2.txt", encoding='utf-8') as reference, open("output.gcode", 'w',
-                                                                                                     encoding='utf-8') as output:
+with open("input.txt", encoding='utf-8') as input, open("SM2.txt", encoding='utf-8') as reference, open("output.gcode", 'w',encoding='utf-8') as output:
     P = Page()
     output.write(StartGcode)
     while True:
